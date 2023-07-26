@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Discord Login</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .discord-button {
+            display: inline-block;
+            background-color: #7289DA;
+            border-radius: 5px;
+            padding: 15px 30px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+            transition: background-color 0.3s ease-in-out;
+        }
+        .discord-button img {
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .discord-button:hover {
+            background-color: #677BC4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your App</h1>
+        <p>Login with Discord:</p>
+        <a href="https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=identify" class="discord-button">
+            <img src="https://discord.com/assets/1a30a2bd637a95b81c5eaf7d3636a881.png" alt="Discord Logo" width="30" height="30">
+            Sign in with Discord
+        </a>
+    </div>
+</body>
+</html>
